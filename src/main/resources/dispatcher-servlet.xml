@@ -16,7 +16,8 @@
 	<aop:aspectj-autoproxy />
 
 	<mvc:interceptors>
-		<bean id="noCache" class="org.sourcetree.support.web.filter.NoCacheHeaderInterceptor"
+		<bean id="noCache"
+			class="org.sourcetree.support.web.filter.NoCacheHeaderInterceptor"
 			init-method="initializeMap">
 			<property name="excludeURI">
 				<list>
